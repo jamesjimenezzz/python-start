@@ -1,12 +1,7 @@
 
-
-#input / output
 name = input("What is your name? ")
-age = int(input("What is your age?"))
-print(name + " is " + str(age) + " years old") #J ames is 17 years old
+food = input("What is your favorite food? ")
+age = int(input("What is your age? "))
 
 
-#multiple assignment
-name, age, isSleepy = "James", 17, True
-print(name, age, isSleepy) #James 17  True
-
+print(f"hello {name}, nice to meet you. Your favorite food is {food}? and you are {age} years old?")
