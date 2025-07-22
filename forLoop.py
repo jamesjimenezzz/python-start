@@ -1,4 +1,13 @@
 
+import time
+
+for i in reversed(range(1,11)):
+    print(i)
+    time.sleep(0.5)
+
+print("Happy new year!")
+
+
 
 #for i in range(10):
  #   print(i + 1) #1 2 3 4 - 10
@@ -19,3 +28,14 @@ for i in range(rows):
 #@@@@
 #@@@@
 #@@@@
+
+
+
+
+
+
+for i in range(21):
+    if i == 13:
+        continue
+    else:
+        print(i)
