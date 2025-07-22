@@ -1,21 +1,11 @@
 
 
-name = input("Enter your name: ")
+food = input("Enter the food you like (q to quit)")
 
-while name == "":
-    print("Please enter your name.")
-    name = input("Enter your name: ")
+while food != "q":
+    print(f"you like {food}")
+    food = input("Enter another food you like (q to quit)")
 
-
-print(f"Hello {name}")
-
-#-----------------------------------------------------
-
-num = int(input("Enter a number between 1-10 "))
-
-while num < 1 or num > 10:
-    print("Invalid Number")
-    num = int(input("Enter a number between 1-10 "))
+print("Session terminated.")
 
 
-print(f"Your number is {num}")
