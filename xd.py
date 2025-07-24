@@ -1,5 +1,6 @@
 
 
-import math
+row = ["J", "J", "J"]
 
-print(math.pi)
+
+print(row)
