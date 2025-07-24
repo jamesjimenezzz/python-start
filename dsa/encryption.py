@@ -8,6 +8,8 @@ chars = list(chars)
 encrypt = chars.copy()
 random.shuffle(encrypt)
 
+
+#ENCRYPTION
 name = input("Enter a message to encrypt ")
 cipher_text =""
 
