@@ -1,4 +1,5 @@
-
+def get_word():
+    return "python"
 
 def get_guesses(word_length):
     while True:
@@ -29,17 +30,11 @@ def ask_again():
     answer = input("Do you still want to play again? y/n: ")
     return answer == "y"
 
-
-def main():
-    word = "python"
-    is_running = True
-    word_list = list(word)
+def play_round(chances=5, word="python"):
     word_length = len(word)
+    word_list = list(word)
 
-    while is_running:
-        chances = 5
-
-        while chances > 0:
+    while chances > 0:
             guess = get_guesses(word_length)
             guess_list = list(guess)
             results = check_guesses(guess_list, word_list, word_length)
@@ -52,7 +47,12 @@ def main():
 
             chances -= 1
             print(f"You only have {chances} guesses now ")
-        
+
+
+
+def main():
+    while True:
+        play_round()
         if not ask_again():
             print("Thanks for playing")
             break
