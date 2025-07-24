@@ -8,7 +8,7 @@ chars = list(chars)
 encrypt = chars.copy()
 random.shuffle(encrypt)
 
-name = "James"
+name = input("Enter a message to encrypt ")
 cipher_text =""
 
 
@@ -18,5 +18,22 @@ for letter in name:
     cipher_text += encrypt[index]
 
 
+print(f"Original Message: {name}")
+print(f"Encrypted Message: {cipher_text}")
 
-print(cipher_text)
+
+#DECRYPTION
+
+
+cipher_text = input("Enter a message to decrypt ")
+name = ""
+
+
+for letter in cipher_text:
+    index = encrypt.index(letter)  
+    
+    name += chars[index]
+
+
+print(f"Encrypted Message: {cipher_text}")
+print(f"Original Message: {name}")
